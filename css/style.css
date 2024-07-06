@@ -2,7 +2,6 @@
 body{
 	margin:0;
 }
-
 .header-inner{
 	display: flex;
 	justify-content: space-between;
@@ -18,10 +17,16 @@ body{
 }
 a{
 	text-decoration: none ;
+}
+.header-menu a{
   color: #ffffff;
 	background-color: #6ba7eb;
 	font-size: 12px;
   padding: 12px 14px;
+}
+.header-menu a:hover {
+	color: #333;
+	transition: color 0.3s;
 }
 .keyvisual{
 	background-image: url("../img/keyvisual/keyvisual.jpg");
@@ -48,31 +53,41 @@ a{
 	color: #ffffff;
 	text-align: center;
 }
-.work{
-	background: #e3f2fd;
-	display: flex;
-	align-items: center;
-	text-align:center;
-	justify-content: space-between;
-	padding: 0 200px;
+.work {
+  background: #e3f2fd;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 200px;
 }
-.s-container1 img{
-	margin-top: 50px;
-	width: 250px;
+
+.s-container1 {
+  flex: 4;
+  max-width: 40%;
+  margin-top: 50px;
 }
-.s-container2{
-	max-width: 60%;
+
+.s-container1 img {
+  width: 250px;
+  height: auto;
 }
-.work-title{
-	font-size: 40px;
-	letter-spacing: 10px;
-	margin-top: 20px;
-	margin-bottom: 35px;
+
+.s-container2 {
+  flex: 6;
+  max-width: 60%;
 }
-.work-detail{
-	font-size: 15px;
-	line-height: 18px;
-	word-break: break-all;
+
+.work-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.work-detail {
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
 }
 
 .skills{
@@ -93,14 +108,15 @@ a{
 	justify-content: center;
 	margin-bottom: 70px;
 }
-.net-pic img,
-.camera-pic img,
-.download-pic img,
-.production-pic img,
-.album-pic img,
-.music-pic img{
+.skills-inner .picture img{
 	width: 300px;
 	height: 300px;
+	object-fit: cover;
+	opacity: 0.7;
+}
+.skills-inner .picture img:hover{
+	transition: opacity 0.3 ease;
+	opacity: 1.0;
 }
 .plan-container{
 	padding: 50px 300px;
@@ -124,7 +140,7 @@ a{
 	font-size: 16px;
 	line-height: 26px;
 }
-.table-title{
+.plan-table thead th{
 	background: #6ba7ed;
 }
 tbody{
@@ -141,13 +157,22 @@ tbody{
 }
 .sns-items{
 	padding: 200px 0;
-	color: #8c8c8c;
 	overflow: hidden;
 	font-size: 40px;
 	text-align: center;
 }
+.sns-items a{
+	color: #8c8c8c;
+	cursor: pointer;
+}
+.sns-items i:hover{
+	transition:background 0.5s ease;
+	background: #fff;
+	cursor: pointer;
+}
 .sns-container i{
 	width: 185px;
+	height: auto;
 	padding: 25px 0;
 }
 .footer-content{
