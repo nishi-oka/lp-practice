@@ -175,7 +175,7 @@ a{
 	margin-bottom: 70px;
 }
 @media screen and (max-width:767px) {
-	body{
+	.skills{
 		line-height: 0;
 	}
 	.skills-inner{
@@ -194,7 +194,7 @@ a{
 	}
 }
 @media screen and (max-width:1199px){
-	body{
+	.skills{
 		line-height: 0;
 	}
 	.skills-inner{
@@ -281,6 +281,9 @@ tbody{
 	overflow: hidden;
 	font-size: 40px;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .sns-items a{
 	color: #8c8c8c;
@@ -304,15 +307,11 @@ tbody{
 	}
 	.sns-items {
 		padding: 50px 15px;
+		flex-direction: column;
 	}
 	.sns-items i {
 		padding: 50px 0;
 		width: 100%;
-	}
-	.sns-items i:hover{
-		transition:background 0.5s ease;
-		background: #fff;
-		cursor: pointer;
 	}
 }
 
