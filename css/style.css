@@ -176,7 +176,6 @@ tbody{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
 }
 .sns-items a{
 	color: #8c8c8c;
@@ -192,7 +191,6 @@ tbody{
 	height: auto;
 	padding: 25px 0;
 }
-
 .footer-content{
 	background: #cfd8dc;
 }
@@ -202,7 +200,6 @@ tbody{
 	letter-spacing: 0.5px;
 	text-align: end;
 }
-
 @media screen and (max-width:767px) {
 	.inner {
 		width:97%;
@@ -243,7 +240,6 @@ tbody{
 	.skills-inner .picture:nth-child(11){
 		margin-top: 80px;
 	}
-
 	.plan-table th{
 		font-size: 14px;
 		line-height: 22px;
@@ -268,7 +264,6 @@ tbody{
 		padding: 20px;
 	}
 }
-
 @media screen and (max-width:1199px) {
 	.inner{
 		width: 97%;
