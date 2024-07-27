@@ -6,6 +6,7 @@
 .inner {
 	width:1100px;
 	margin:0 auto;
+	word-break: break-all;
 }
 .header-inner{
 	display: flex;
@@ -17,7 +18,7 @@
 	padding: 15px;
 	color: #777;
 }
-.header a{
+a{
 	text-decoration: none ;
 }
 .header-menu a{
@@ -100,7 +101,6 @@
 .work-detail {
   font-size: 15px;
   line-height: 18px;
-  word-break: break-all;
 }
 .skills{
 	background: #fff;
@@ -110,8 +110,8 @@
 	font-size: 40px;
 	letter-spacing: 10px;
 }
-.skill-title{
-	margin: 50px 0;
+.skill-title-container{
+	margin: 50px auto;
 }
 .skills-inner{
 	display: grid;
@@ -176,7 +176,7 @@ tbody{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	text-decoration: none ;
+
 }
 .sns-items a{
 	color: #8c8c8c;
@@ -282,9 +282,6 @@ tbody{
 	}
 	.skills{
 		line-height: 0;
-	}
-	.skill-title{
-		border-collapse: collapse;
 	}
 	.skills-inner{
 		display: grid;
