@@ -235,9 +235,7 @@ tbody{
 	.skills-inner .picture{
 		margin: 0 auto;
 	}
-	.skills-inner .picture:nth-child(4),
-	.skills-inner .picture:nth-child(7),
-	.skills-inner .picture:nth-child(11){
+	.skills-inner .picture:nth-child(3n+1){
 		margin-top: 80px;
 	}
 	.plan-table th{
@@ -287,9 +285,7 @@ tbody{
 	.skills-inner .picture{
 		margin: 0 auto;
 	}
-	.skills-inner .picture:nth-child(4),
-	.skills-inner .picture:nth-child(7),
-	.skills-inner .picture:nth-child(11){
+	.skills-inner .picture:nth-child(3n+1){
 		margin-top: 80px;
 	}
 	.plan-container{
